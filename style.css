@@ -1,0 +1,159 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #f4f8ff;
+  color: #183153;
+  line-height: 1.8;
+}
+
+.navbar {
+  background: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 15px #12345610;
+}
+
+.logo {
+  color: #1769e0;
+  font-size: 27px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tagline {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 75px 15px;
+  margin-top: 25px;
+  background: linear-gradient(135deg, #e6f1ff, #ffffff);
+  border-radius: 28px;
+}
+
+.hero-icon {
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.welcome {
+  color: #1769e0;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: clamp(34px, 7vw, 55px);
+  line-height: 1.4;
+  margin: 12px 0;
+}
+
+.description {
+  max-width: 550px;
+  margin: 15px auto 25px;
+  color: #64748b;
+}
+
+.main-button {
+  display: inline-block;
+  background: #1769e0;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.services {
+  padding: 65px 0;
+  text-align: center;
+}
+
+.services h2,
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 28px 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px #1234560c;
+}
+
+.card-icon {
+  font-size: 42px;
+}
+
+.card h3 {
+  margin: 12px 0 5px;
+}
+
+.card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.card button {
+  margin-top: 18px;
+  padding: 9px 22px;
+  border: 0;
+  border-radius: 9px;
+  background: #e8f1ff;
+  color: #1769e0;
+  font-weight: bold;
+}
+
+.about {
+  text-align: center;
+  padding: 35px 15px;
+  background: white;
+  border-radius: 20px;
+  margin-bottom: 45px;
+}
+
+footer {
+  background: #123b70;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 4px;
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 14px 5%;
+  }
+
+  .hero {
+    padding: 55px 15px;
+  }
+}
